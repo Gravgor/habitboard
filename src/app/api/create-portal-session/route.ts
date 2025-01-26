@@ -20,7 +20,6 @@ export async function POST(req: Request) {
       customer: customerId,
       return_url: returnUrl,
     });
-
     return NextResponse.json({ url: portalSession.url });
   } catch (err) {
     console.error('Error:', err);

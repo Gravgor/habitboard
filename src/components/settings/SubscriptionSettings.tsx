@@ -22,7 +22,6 @@ export default function SubscriptionSettings() {
 
   useEffect(() => {
     if (!user) return;
-
     const unsubscribe = onSnapshot(doc(db, 'users', user.uid), (doc) => {
       if (doc.exists()) {
         setSubscriptionData({
@@ -34,7 +33,6 @@ export default function SubscriptionSettings() {
         setLoading(false);
       }
     });
-
     return () => unsubscribe();
   }, [user]);
 
@@ -68,6 +66,7 @@ export default function SubscriptionSettings() {
 
   const handleManageSubscription = async () => {
     setIsManaging(true);
+    if (!subscriptionData) return;
     try {
       const response = await fetch('/api/create-portal-session', {
         method: 'POST',
@@ -75,7 +74,7 @@ export default function SubscriptionSettings() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          customerId: subscriptionData?.stripeCustomerId,
+          customerId: subscriptionData.stripeCustomerId,
           returnUrl: window.location.href,
         }),
       });

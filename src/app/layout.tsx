@@ -27,10 +27,6 @@ export const metadata: Metadata = {
       { url: '/apple-icon.png' },
     ],
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#111827' },
-  ],
 };
 
 export default function RootLayout({
