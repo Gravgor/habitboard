@@ -14,7 +14,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.text();
     const headersList = await headers();
-    const signature = headersList.get('stripe-signature');
+    const signature = headersList.get('stripe-signature') as string;
 
     if (!signature) {
       return NextResponse.json(
@@ -62,7 +62,7 @@ export async function POST(req: Request) {
           tier: 'free',
           subscriptionId: ''
         });
-        
+
         break;
       }
 
