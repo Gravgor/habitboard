@@ -8,8 +8,8 @@ export const defaultMetadata: Metadata = {
     default: 'Habinvest - Transform Your Habits into Valuable Assets',
     template: '%s | Habinvest'
   },
-  description: 'Transform your daily habits into valuable assets with Habinvest. Track habits, build streaks, and grow your habit portfolio.',
-  keywords: ['habit tracking', 'personal development', 'habit building', 'productivity', 'self improvement', 'habit investment'],
+  description: 'Build better habits, track progress, and achieve personal growth. Join thousands who are transforming their daily routines into valuable streaks with our habit-tracking app. Sign up today!',
+  keywords: ['habit tracking', 'personal development', 'habit building', 'productivity', 'self improvement', 'habit investment', 'Habit tracking app', 'Best habit tracker 2025', 'Daily habit tracker', 'Build streaks app', 'Habit analytics', 'Goal-setting tools', 'Streak builder app', 'Community-driven habit tracker'],
   authors: [{ name: 'Habinvest' }],
   creator: 'Habinvest',
   publisher: 'Habinvest',
