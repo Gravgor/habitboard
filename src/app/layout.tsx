@@ -4,6 +4,7 @@ import "./globals.css";
 import { inter, outfit } from './fonts';
 import { AuthProvider } from '@/contexts/AuthContext';
 import { defaultMetadata } from '@/lib/metadata';
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
         <AuthProvider>
           {children}
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
