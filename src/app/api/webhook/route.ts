@@ -62,6 +62,7 @@ export async function POST(req: Request) {
           tier: 'free',
           subscriptionId: ''
         });
+        
         break;
       }
 
