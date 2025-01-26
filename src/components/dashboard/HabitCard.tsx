@@ -3,9 +3,10 @@ import { Habit } from "@/types/habit";
 interface HabitCardProps {
   habit: Habit;
   onToggle: () => void;
+  isDemo?: boolean;
 }
 
-export default function HabitCard({ habit, onToggle }: HabitCardProps) {
+export default function HabitCard({ habit, onToggle, isDemo }: HabitCardProps) {
   const today = new Date().toISOString().split('T')[0];
   const isCompletedToday = habit.completedDates.includes(today);
   const growthColor = habit.growth > 0 ? 'text-green-500' : 'text-red-500';
@@ -27,12 +28,12 @@ export default function HabitCard({ habit, onToggle }: HabitCardProps) {
           </div>
         </div>
         <button
-          onClick={onToggle}
+          onClick={isDemo ? () => {} : onToggle}
           className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors
             ${isCompletedToday 
               ? 'bg-green-500 border-green-500' 
               : 'border-gray-300 dark:border-gray-600 hover:border-green-500'
-            }`}
+            } ${isDemo ? 'cursor-not-allowed' : ''}`}
         >
           {isCompletedToday && (
             <svg className="w-4 h-4 text-white" viewBox="0 0 20 20" fill="currentColor">

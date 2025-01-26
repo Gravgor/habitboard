@@ -32,9 +32,10 @@ ChartJS.register(
 interface ProAnalyticsProps {
   habits: Habit[];
   userTier: 'free' | 'pro';
+  isDemo?: boolean;
 }
 
-export default function ProAnalytics({ habits, userTier }: ProAnalyticsProps) {
+export default function ProAnalytics({ habits, userTier, isDemo }: ProAnalyticsProps) {
   const [timeframe, setTimeframe] = useState<'week' | 'month' | 'year'>('week');
 
   const timeframeDays = {

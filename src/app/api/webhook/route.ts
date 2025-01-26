@@ -38,8 +38,10 @@ export async function POST(req: Request) {
       const subscription = event.data.object as Stripe.Subscription;
       const customerId = subscription.customer as string;
 
-      // Find user with this stripeCustomerId and revert to free tier
-      // You'll need to implement this query based on your data structure
+      await updateDoc(doc(db, 'users', customerId), {
+        tier: 'free',
+        subscriptionId: ''
+      });
     }
 
     return NextResponse.json({ received: true });

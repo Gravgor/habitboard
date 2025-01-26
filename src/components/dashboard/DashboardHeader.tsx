@@ -15,7 +15,7 @@ export default function DashboardHeader() {
             <span className="text-white font-bold">H</span>
           </div>
           <span className="font-display text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text">
-            HabitBoard
+            Habinvest
           </span>
         </div>
 

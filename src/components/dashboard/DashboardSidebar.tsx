@@ -36,6 +36,15 @@ const navigation = [
     ),
   },
   {
+    name: 'Leaderboard',
+    href: '/dashboard/leaderboard',
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l3.293 3.293-7 7-1.414-1.414 7-7L12 2z" />
+      </svg>
+    ),
+  },
+  {
     name: 'Settings',
     href: '/dashboard/settings',
     icon: (
