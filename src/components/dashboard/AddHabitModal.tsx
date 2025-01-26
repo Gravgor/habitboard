@@ -57,6 +57,7 @@ export default function AddHabitModal({
 
       onClose();
     } catch (err) {
+      console.error('Error adding habit:', err);
       setError('Failed to create habit. Please try again.');
     } finally {
       setLoading(false);

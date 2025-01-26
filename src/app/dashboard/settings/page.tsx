@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { db } from '@/lib/firebase';
 import { doc, updateDoc } from 'firebase/firestore';
+import SubscriptionSettings from '@/components/settings/SubscriptionSettings';
 
 export default function Settings() {
   const { user } = useAuth();
@@ -60,6 +61,8 @@ export default function Settings() {
           {error}
         </div>
       )}
+
+      <SubscriptionSettings />
 
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
         <h2 className="font-display text-xl font-semibold mb-6">Account Settings</h2>
