@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Habinvest
+
+Habinvest is a powerful habit tracking application that helps you transform your daily habits into a legacy of success. Track your habits, visualize your progress, and join a community of motivated individuals.
+
+## Features
+
+- **Habit Growth Tracking**: Visualize how your streaks add value over time
+- **Detailed Analytics**: Get insights into your habits with beautiful charts and progress tracking
+- **Community**: Join leaderboards and stay motivated with like-minded habit builders
+- **Dashboard**: Track all your habits in one central dashboard
+- **Multiple Device Support**: Access your habits on desktop and mobile
+- **Dark Mode**: Enjoy a comfortable viewing experience day or night
+
+## Tech Stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Firebase (Authentication & Database)
+- Chart.js
+- Stripe for Payments
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18.0.0 or later
+- npm, yarn, or pnpm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Gravgor/habitboard.git
+   cd habitboard
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-## Learn More
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app/`: Next.js app router pages
+- `src/components/`: Reusable UI components
+- `src/contexts/`: React context providers
+- `src/lib/`: Core library functions
+- `src/types/`: TypeScript type definitions
+- `src/utils/`: Utility functions
 
-## Deploy on Vercel
+## Pricing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Habinvest offers both Free and Pro pricing tiers:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Free**: Track up to 3 habits with basic analytics and daily reminders
+- **Pro**: Unlimited habits, advanced analytics, community features, and more
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
